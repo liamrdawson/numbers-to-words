@@ -4,5 +4,9 @@
 @import 'utilities/mixins';
 @import 'utilities/variables';
 
-//     BASE
+//  BASE
 @import 'base/base';
+
+//  COMPONENTS
+@import 'components/header';
+@import 'components/form';

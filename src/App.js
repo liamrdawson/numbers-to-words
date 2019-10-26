@@ -1,11 +1,15 @@
 import React from 'react';
 import './scss/App.scss';
 
+import Header from './components/Header';
+import NumbersInput from './components/numbers/NumbersInput';
+
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <React.Fragment>
+      <Header />
+      <NumbersInput />
+    </React.Fragment>
   );
 }
 

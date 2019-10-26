@@ -1,3 +1,29 @@
-body {
-    background-color: tomato;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $standard-font;
+}
+
+html {
+    font-size: $space5;
+}
+
+h1 {
+    font-size: $space7;
+    max-width: 474px;
+    @include mq('med') {
+        font-size: $space8;
+    }
+}
+
+h1, h2 {
+    font-family: $title-font;
+    @include title();
+}
+
+h3 {
+    font-weight: 400;
+    font-family: $title-font;
+    @include title(); 
 }
