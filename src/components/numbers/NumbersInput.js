@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 export class NumbersInput extends Component {
+
     render() {
         return (
             <form className="input-form">

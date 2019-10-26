@@ -1,0 +1,13 @@
+.output {
+    min-height: 500px;
+    background-color: $dark-text;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    color: $light;
+    padding: $pa5;
+    h3 {
+        color: $light;
+        text-align: center;
+    }
+}
