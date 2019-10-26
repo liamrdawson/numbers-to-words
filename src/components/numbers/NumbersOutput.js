@@ -12,8 +12,12 @@ export class NumbersOutput extends Component {
     }
 
     printNumbers = (numbers, numbersRange) => {
-        for(numbers.lowNumber; numbers.lowNumber < numbersRange; numbers.lowNumber++) {
-
+        if (numbers.lowNumber === 0) {
+            return 'zero';
+        }  else {
+            for(numbers.lowNumber; numbers.lowNumber < numbersRange; numbers.lowNumber++) {
+                this.props.converter(numbers.lowNumber, numbers.highNumber);
+            }
         }
     }
 
@@ -23,7 +27,7 @@ export class NumbersOutput extends Component {
             <div className="output">
                 <h3>
                     Output goes here...
-
+                    
                 </h3>
             </div>
         )
