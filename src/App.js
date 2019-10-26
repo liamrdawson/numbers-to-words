@@ -73,7 +73,7 @@ class App extends Component {
       <React.Fragment>
         <Header />
         <NumbersInput numbersToWords={this.numbersToWords} onSubmit={this.onSubmit}/>
-        <NumbersOutput numbers={this.state.numbers}/>
+        <NumbersOutput numbers={this.state.numbers} converter={this.converter}/>
       </React.Fragment>
     );
   }
